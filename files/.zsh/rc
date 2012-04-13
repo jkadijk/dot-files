@@ -11,6 +11,8 @@ if [ $(uname -s) = 'Darwin' ]; then
   export EDITOR='mate -w -l1'
   export PATH="$HOME/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/X11/bin"
   export MANPATH="/usr/local/share/man:/usr/X11/man:/usr/share/man"
+  export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+
 else
   export PATH="$HOME/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin"
 fi
